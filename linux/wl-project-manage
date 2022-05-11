@@ -1,0 +1,22 @@
+#!/bin/bash
+echo '请选择要启动的项目'
+echo '1. OLSL'
+echo '2. MCP'
+echo '3. POS'
+
+read index
+
+case $index in
+1)
+    cd ~/project/olsl-back
+    pnpm dev
+    ;;
+2)
+    cd ~/project/mcp-back
+    pnpm dev
+    ;;
+3)
+    cd ~/project/pos-h5
+    pnpm dev
+    ;;
+esac
